@@ -37,8 +37,8 @@ MIC_DISTANCE = 0.15
 sample_rate = 48000
 MAX_TDOA = MIC_DISTANCE / float(SOUND_SPEED)
 
-org_ref, sr = librosa.load("./data/ref.wav", sr=sample_rate)
-org_sig, sr = librosa.load("./data/sig.wav", sr=sample_rate)
+org_ref, sr = librosa.load("./samples/ref.wav", sr=sample_rate)
+org_sig, sr = librosa.load("./samples/sig.wav", sr=sample_rate)
 
 
 ref = librosa.util.frame(org_ref, 1024, 256).T
